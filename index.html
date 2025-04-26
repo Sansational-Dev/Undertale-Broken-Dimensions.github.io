@@ -1,4 +1,9 @@
 <html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-lua.min.js"></script>
+    </head>
     <body>
         <h1>
             UBD CHARACTER INFO
@@ -15,6 +20,19 @@
         <p>
             <link rel="stylesheet" type="text/css" href="style.css">
             <p style="white-space: pre-wrap; font-family: Determination;"></p>
+            <script>
+                fetch('info.txt')
+                    .then(response => response.text())
+                    .then(data => {
+                        // Wrap the Lua code in a <code> block with the language-lua class
+                        const luaCode = `<pre><code class="language-lua">${data}</code></pre>`;
+                        document.querySelector('p[style]').outerHTML = luaCode;
+            
+                        // Trigger Prism.js to highlight the code
+                        Prism.highlightAll();
+                    })
+                    .catch(error => console.error('Error loading info.txt:', error));
+            </script>
                 <script>
                     fetch('info.txt')
                         .then(response => response.text())
@@ -23,6 +41,7 @@
                         })
                         .catch(error => console.error('Error loading info.txt:', error));
                 </script>
+                
         </p>
     </body>
 </html>
