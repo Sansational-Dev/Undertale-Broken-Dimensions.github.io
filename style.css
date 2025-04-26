@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Determination';
+    src: url('determination.ttf') format('truetype');
+}
+
+* {
+    font-family: 'Determination', sans-serif;
+    color: white;
+    background-color: black;
+}
