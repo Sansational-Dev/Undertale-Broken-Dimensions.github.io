@@ -7,7 +7,38 @@
     font-family: 'Determination', sans-serif;
     color: white;
 }
+/* Keywords (e.g., function, local, return) */
+.token.keyword {
+    text-shadow: 0 0 10px rgba(195, 0, 255, 0.4), 0 0 20px rgba(221, 0, 255, 0.3), 0 0 30px rgba(191, 0, 255, 0.2);
+}
 
+/* Strings (e.g., "Hello, world!") */
+.token.string {
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.4), 0 0 20px rgba(0, 255, 0, 0.3), 0 0 30px rgba(0, 255, 0, 0.2);
+}
+
+/* Comments (e.g., -- This is a comment) */
+.token.comment {
+    text-shadow: 0 0 10px rgba(136, 136, 136, 0.4), 0 0 20px rgba(136, 136, 136, 0.3), 0 0 30px rgba(136, 136, 136, 0.2);
+}
+
+/* Numbers (e.g., 123, 3.14) */
+.token.number {
+    text-shadow: 0 0 10px rgba(255, 102, 102, 0.4), 0 0 20px rgba(255, 102, 102, 0.3), 0 0 30px rgba(255, 102, 102, 0.2);
+}
+
+/* Functions (e.g., print, pairs) */
+.token.function {
+    text-shadow: 0 0 10px rgba(102, 204, 255, 0.4), 0 0 20px rgba(102, 204, 255, 0.3), 0 0 30px rgba(102, 204, 255, 0.2);
+}
+pre, code {
+    background-color: rgba(0, 0, 0, 0.362) !important; /* Or any color you prefer */
+    border: none; /* Optional: Remove borders if present */
+}
+
+html {
+    border: 5px solid white;
+}
 h1,h3 {
     text-shadow: 0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4);
 }
