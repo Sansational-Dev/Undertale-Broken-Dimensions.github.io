@@ -1,5 +1,5 @@
 return{
-	['GameSettings']={
+['GameSettings']={
 		['RoundTime']=694;
 		['LobbyTime']=35; -- original time 26 increasing it for my arg -swirls
 	}; 
@@ -23725,3 +23725,5 @@ return{
 		};
 	};
 };
+}
+	
